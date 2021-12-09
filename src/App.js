@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/BannerAlert/Banner';
-import LandingPage from './pages/LandingPage';
 import Footer from './components/Footer/Footer';
+import LandingPage from './pages/LandingPage';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Banner />      
         <Routes>
           <Route exact path="/" element={<LandingPage/>} />
-        </Routes>  
+        </Routes> 
         <Footer />
       </div>
     </BrowserRouter>

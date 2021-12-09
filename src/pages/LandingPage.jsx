@@ -1,5 +1,5 @@
 import React from 'react';
-// import Cards from "./components/Cards";
+import Cards from "../components/Cards/Cards";
 
 const titleStyle = {
   fontFamily: 'Montserrat',
@@ -33,7 +33,9 @@ export default function LandingPage() {
         <span style={subTitleStyle} className="d-flex justify-content-center align-items-center text-center">
           Whether you are visiting a local campus or joining us online for the very first time, we cant wait to connect with you
         </span>
-      </div>    
+      </div>
+
+      <Cards />    
     </div>
   )
 }
