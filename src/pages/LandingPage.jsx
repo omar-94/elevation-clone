@@ -21,6 +21,7 @@ const subTitleStyle = {
 const landingStyle = {
   marginLeft: '1rem',
   marginRight: '1rem',
+  marginBottom: '90px',
 }
 
 export default function LandingPage() {

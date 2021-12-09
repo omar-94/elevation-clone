@@ -3,7 +3,7 @@ import "./style.scss";
 
 export default function Footer() {
   return (
-    <div className="fixed-bottom">
+    <div className="all-footer">
     <div className="main-footer">
       <div className="container footer-menu-cont">
         <div className="row">

@@ -1,0 +1,22 @@
+.card{
+  border-radius: 1rem !important;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.image-style{
+  border-top-left-radius: 1em !important ;
+  border-top-right-radius: 1em !important;
+}
+
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: grey;
+}

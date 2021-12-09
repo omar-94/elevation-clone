@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/BannerAlert/Banner';
@@ -11,10 +11,12 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Banner />      
+        <Banner />
+        <div className="pages">      
         <Routes>
           <Route exact path="/" element={<LandingPage/>} />
         </Routes> 
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
