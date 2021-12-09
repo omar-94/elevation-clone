@@ -1,5 +1,6 @@
 import React from 'react';
-import "./style.scss"
+import "./style.scss";
+import { Link } from 'react-router-dom';
 
 const cardStyle = {
   width: '100%',
@@ -13,11 +14,13 @@ export default function Cards() {
 
         <div className="col-4 d-flex justify-content-center">
           <div class="card" style={cardStyle}>
-            <img className="card-img-top image-style" src="images/church-community.jpeg" alt="Campus Community"/>
-            <div class="card-body">
-              <h3 className="card-title">Campus Community</h3>
-              <p class="card-text">I'm a part of a local campus community.</p>
-            </div>
+              <Link to="/CammpusCommunity" style={{ textDecoration: 'none', color: 'inherit'}}>
+                <img className="card-img-top image-style" src="images/church-community.jpeg" alt="Campus Community"/>
+                <div class="card-body">
+                  <h3 className="card-title">Campus Community</h3>
+                  <p class="card-text">I'm a part of a local campus community.</p>
+                </div>
+              </Link>
           </div>
         </div>
 

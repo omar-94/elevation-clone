@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Banner from './components/BannerAlert/Banner';
 import Footer from './components/Footer/Footer';
 import LandingPage from './pages/LandingPage';
+import CampusCommunity from './pages/CampusCommunity';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <div className="pages">      
         <Routes>
           <Route exact path="/" element={<LandingPage/>} />
+          <Route exact path="/CampusCommunity" element={<CampusCommunity/>} />
         </Routes> 
         </div>
         <Footer />
