@@ -1,0 +1,45 @@
+.main-footer{
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+
+.list-unstyled{
+  line-height: 33px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.sub-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #909294;
+}
+
+.contact{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+}
+
+.phone-number{
+  text-decoration: none;
+  color: #F68246;
+}
+
+.copyright{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #909294;
+  padding: 1rem;
+  align-items: center;
+}
+
+.term-privacy-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #909294;
+}
