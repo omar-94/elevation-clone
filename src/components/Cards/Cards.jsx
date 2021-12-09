@@ -14,7 +14,7 @@ export default function Cards() {
 
         <div className="col-4 d-flex justify-content-center">
           <div class="card" style={cardStyle}>
-              <Link to="/CammpusCommunity" style={{ textDecoration: 'none', color: 'inherit'}}>
+              <Link to="/CampusCommunity" style={{ textDecoration: 'none', color: 'inherit'}}>
                 <img className="card-img-top image-style" src="images/church-community.jpeg" alt="Campus Community"/>
                 <div class="card-body">
                   <h3 className="card-title">Campus Community</h3>
