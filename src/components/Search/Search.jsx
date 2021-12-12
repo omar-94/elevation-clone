@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Data from "../../elevationData";
 
 const Search = () => {
+  
   const [filterText, setFilterText] = useState("");
 
   const filteredItems = Data.filter(
