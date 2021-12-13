@@ -2,13 +2,21 @@ import React from 'react'
 // import Data from '../elevationData'
 // import Search from '../components/Search/Search'
 import Accordion from '../components/Accordion/Accordion'
+import Results from '../components/Results/Results'
 
 export default function CampusCommunity() {
   return (
     <div>
       {/* <Search /> */}
-      <Accordion />
+      <div className="container">
+        <div className="row">
+          <Accordion />
+           
+          <Results />
+        </div>
+      </div>
       
+     
     </div>
   )
 }

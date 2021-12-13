@@ -4,11 +4,6 @@ import Data from '../../elevationData';
 
 export default function AccordionMenu() {
   return (
-    <div>
-
-      <div className="container">
-        <div className="row">
-
           <div className="col-4">
             <div className="accordion" id="accordionExample">
 
@@ -19,14 +14,12 @@ export default function AccordionMenu() {
                   </button>
                 </h3>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div className="accordion-body">
-                      <option>
+                  <ul className="accordion-body" style={{ listStyleType: 'none' }}>
                         { 
                           Data
-                          .map(Data => <li key={Data.id}>{Data.campusName}</li>) 
+                          .map(Data => <a href="/"><li key={Data.id} className='label'>{Data.campusName}</li></a>) 
                         }
-                      </option>
-                  </div>
+                  </ul>
                 </div>
               </div>
 
@@ -38,30 +31,17 @@ export default function AccordionMenu() {
                 </h3>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div className="accordion-body">
-                  <ul style={{ listStyleType: 'none' }}>
-                        { 
-                          Data
-                          .map(Data => <li key={Data.id}>{Data.demographic}</li>) 
-                        }
-                      </ul>
+                    <ul style={{ listStyleType: 'none' }}>
+                      { 
+                        Data
+                        .map(Data => <button key={Data.id}>{Data.demographic}</button>) 
+                      }
+                    </ul>
                   </div>
                 </div>
               </div>
 
             </div>
           </div>
-        
-          
-          <div className="col-lg">
-            <div className="results">
-              <h2> Find an e group</h2> 
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    
-    </div>
   )
 }
